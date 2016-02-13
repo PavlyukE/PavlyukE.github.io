@@ -1,0 +1,21 @@
+{
+  "name": "Dark",
+  "authors": [
+    "PavlyukE"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

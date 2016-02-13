@@ -1,0 +1,43 @@
+
+.wrapper {
+	width:800px;
+	margin:auto;
+}
+legend {
+	font-weight: bold;
+}
+li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+#age {
+	width:2em;
+	-moz-appearance: textfield;
+}
+#age::-webkit-inner-spin-button { 
+  display: none;
+}
+.zero-margin {
+	margin:0;
+}
+.bold {
+	font-weight: bold;
+}
+ul {
+	margin-left:-40px;
+}
+#comments {
+	display:block;
+}
+#disabled-input, #email-input {
+	display: block;
+    width: 200px;
+    margin-bottom:10px;
+}
+span {
+	font-style: italic;
+
+}
+h1 {
+	text-align: center;
+}

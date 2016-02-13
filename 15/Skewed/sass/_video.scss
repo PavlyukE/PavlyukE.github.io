@@ -1,0 +1,29 @@
+
+#video {
+	position:relative;
+	min-height:500px;
+	padding:50px 0 150px 0;
+	background-color: #f7cc4b;
+	.section-title {
+		color:#FFF;
+	}
+	span {
+		display:block;
+		color: #222;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 28px;
+	}
+
+	video {
+		margin:20px auto;
+		width:90%;
+		max-width:820px;
+	}
+
+	&:after {
+		border-top: 100px solid transparent;
+	    border-right: 100vw solid #FFF;
+	}
+
+}

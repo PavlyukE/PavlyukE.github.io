@@ -1,0 +1,85 @@
+// Screen
+// ======
+@import "compass/reset";
+@import "grids";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
+
+@mixin transition {
+  -webkit-transition: all .4s ease;
+  -moz-transition:    all .4s ease;
+  -o-transition:      all .4s ease;
+}
+@include border-box-sizing();
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  color: #6e6e6e;
+  font-size: 14px;
+  text-align: center;
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+.container {
+  @include container();
+}
+section {
+	position:relative;
+	overflow:hidden;
+	min-height: 500px;
+	padding:0 0 100px 0;
+	&:after {
+		height:0;
+		width:0;
+		position: absolute;
+		bottom:0;
+		content:"";
+		display:block;
+	}
+}
+.section-title {
+	color: #222;
+	font-size: 60px;
+	font-weight: 100;
+	line-height: 60px;
+}
+.find-out-more {
+	position:relative;
+	display:inline-block;
+	padding:10px 40px;
+	margin:30px 0;
+	border: 2px solid #f7cc4b;
+	border-radius: 1px;
+	color: #f7cc4b;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	@include transition;
+	&:after {
+		content: "";
+	    position:absolute;
+	    bottom:0; left:0;
+	    width:100%; height:0px;
+	    background:#f7cc4b;
+	    z-index:-1;
+	    transition: height .6s;
+	}
+	&:hover {
+		color:#FFF;
+		&:after {
+			height:100%;
+		}
+	}
+
+}
+@import "hero";
+@import "about";
+@import "video";
+@import "team";
+@import "parallax";
+@import "principles";
+@import "portfolio";
+@import "achievements";
+@import "contact";
+@import "footer";

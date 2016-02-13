@@ -1,0 +1,39 @@
+
+#about {
+	position:relative;
+	min-height:500px;
+	padding:50px 0 150px 0;
+	.info-block {
+		span {
+			color: #f7cc4b;
+			font-family: Roboto;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 28px;
+		}
+		p {
+			margin-top:20px;
+			color: #b1b1b1;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 28px;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		.info-block {
+			text-align:left;
+			@include span (6 of 12);
+		}
+		.about-pic {
+			@include span (6 of 12);
+		}
+	}
+
+
+
+	&:after {
+		border-top: 100px solid transparent;
+	    border-right: 100vw solid #f7cc4b;
+	}
+
+}
